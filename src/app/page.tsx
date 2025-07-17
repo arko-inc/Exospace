@@ -1,6 +1,8 @@
+import { b } from "motion/react-client";
+
 export default function Home() {
   return (
-    <div className="">
+    <div className="home">
     </div>
   );
 }
