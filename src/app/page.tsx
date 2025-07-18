@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Rocket, Satellite, Telescope } from "lucide-react";
 import Image from "next/image";
-import MarsModel from "@/components/MarsSection"
 
 const Page = () => {
   return (
@@ -39,7 +38,6 @@ const Page = () => {
           </motion.div>
         </div>
       </section>
-      <MarsModel/>
 
       {/* Introduction Section */}
       <section className="py-24 bg-[#0a0a0a]">
