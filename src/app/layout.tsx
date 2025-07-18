@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anta } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const anta = Anta({
   subsets: ["latin"],
@@ -21,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${anta.className} bg-[#0a0a0a] text-white`}>
-        <Navbar />
+        <Navbar/>
+        <div className="w-full h-10"></div>
         {children}
+        <Footer/>
       </body>
     </html>
   );
