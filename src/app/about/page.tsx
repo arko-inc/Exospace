@@ -1,6 +1,7 @@
 "use client";
 import { Timeline } from "@/components/ui/timeline";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 const AboutPage = () => {
   const timelineData = [
@@ -55,23 +56,35 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <div className="relative isolate pt-14">
-        <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-0" />
-        <div className="py-24 sm:py-32 lg:pb-40 relative z-10">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                About Exospace
-              </h1>
+      <div className=" text-center flex flex-col items-center justify-center overflow-hidden rounded-md">
+                   <TextHoverEffect text="About EXOSPACE" />
+                   <div className="w-[70rem] h-40 relative bottom-[152px]">
+        {/* Gradients */}
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+ 
+        {/* Core component */}
+        <SparklesCore
+          background="transparent"
+          minSize={0.4}
+          maxSize={1}
+          particleDensity={1200}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+ 
+        {/* Radial Gradient to prevent sharp edges */}
+                <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+      </div>
               <p className="mt-6 text-lg leading-8 text-gray-300">
                 We are pioneers of the cosmos, dedicated to pushing the boundaries of space 
                 exploration. Our mission is to build a future for humanity among the stars.
               </p>
-            </div>
-          </div>
-        </div>
       </div>
       <Timeline data={timelineData} />
+
     </div>
   );
 };
