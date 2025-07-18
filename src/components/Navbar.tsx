@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="relative z-10 flex items-center justify-between w-full font-light">
             {/* Logo - Left side */}
             <Link href="/" className="text-white">
-              <span className="inline-block text-3xl">EXOSPACE</span>
+              <span className="inline-block text-3xl font-nothing">EXOSPACE</span>
             </Link>
 
             {/* Desktop Navigation - Right side */}

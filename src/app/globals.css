@@ -120,3 +120,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: Nothing;
+  src: url(../../public/font/nothing-font.otf.woff2);
+}
+
+.font-nothing{
+  font-family: Nothing;
+}

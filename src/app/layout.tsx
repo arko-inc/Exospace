@@ -26,6 +26,7 @@ export default function RootLayout({
         <div className="w-full h-10"></div>
         {children}
         <Footer/>
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
       </body>
     </html>
   );
