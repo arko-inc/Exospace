@@ -1,0 +1,44 @@
+[
+    {
+    "image": "/images/hero/img.jpg",
+    "header": "Mars",
+    "paragraph": "Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots.",
+    "link": "/mars",
+    "duration": 5000
+  },
+  {
+    "image": "/images/hero/img0.jpg",
+    "header": "Mars",
+    "paragraph": "Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots.",
+    "link": "/mars",
+    "duration": 5000
+  },
+  {
+    "image": "/images/hero/img1.jpg",
+    "header": "Mars",
+    "paragraph": "Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots.",
+    "link": "/mars",
+    "duration": 5000
+  },
+  {
+    "image": "/images/hero/img2.jpg",
+    "header": "Mars",
+    "paragraph": "Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots.",
+    "link": "/mars",
+    "duration": 5000
+  },
+  {
+    "image": "/images/hero/img3.jpg",
+    "header": "Mars",
+    "paragraph": "Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots.",
+    "link": "/mars",
+    "duration": 5000
+  },
+  {
+    "image": "/images/hero/img4.jpg",
+    "header": "Mars",
+    "paragraph": "Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots.",
+    "link": "/mars",
+    "duration": 5000
+  }
+]

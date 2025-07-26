@@ -3,52 +3,31 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Rocket, Satellite, Telescope } from "lucide-react";
 import Image from "next/image";
+import HeroStory from "@/components/HeroStory";
 
 const Page = () => {
   return (
-    <div className="min-h-screen bg-black text-white font-sans">
-      {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center text-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/image/hero-bg.jpg')" }}>
-        <div className="absolute inset-0 bg-black/5 z-10" />
-        <div className="relative z-20 flex flex-col items-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl md:text-8xl font-extrabold tracking-tighter mb-4"
-          >
-            EXOSPACE
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-2xl font-light max-w-3xl mx-auto text-gray-300 mb-8"
-          >
-            Pioneering the future of space exploration and technology.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <a href="/missions" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-300 shadow-lg">
-              Explore Missions <ChevronRight className="ml-2 h-6 w-6" />
-            </a>
-          </motion.div>
+    <div className="min-h-screen bg-black text-white mx-3 ">
+        <div>
+            <h1 className='text-[6rem] font-thin ml-10'>Todays highlights</h1>
         </div>
-      </section>
+      <HeroStory/>
 
       {/* Introduction Section */}
-      <section className="py-24 bg-[#0a0a0a]">
-        <div className="container mx-auto px-6 text-center">
+      <section className="py-24 bg-[#0a0a0a] flex">
+        <div className="container px-6 text-left flex-2/3">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-8xl font-thin mb-6">
               Pushing the Boundaries of Human Achievement
             </h2>
-          <p className="text-lg md:text-xl max-w-4xl mx-auto text-gray-400">
+          <p className="text-lg md:text-xl max-w-4xl font-light text-gray-400 text-left">
             Exospace is at the forefront of cosmic discovery, developing cutting-edge technologies to explore distant worlds, understand our universe, and secure humanity&apos;s future among the stars. From advanced propulsion systems to interstellar habitats, our work defines the next chapter of exploration.
           </p>
+        </div>
+        <div className="flex-1/3">
+        <div>
+            <img src="/images/falcon9.jpg" alt=""/>
+        </div>
         </div>
       </section>
 

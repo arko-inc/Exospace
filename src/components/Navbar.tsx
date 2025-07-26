@@ -12,7 +12,7 @@ const navLinks = [
     href: "/missions",
     subLinks: [
       { name: "Lunar Gateway", href: "/missions/lunar-gateway" },
-      { name: "Mars Rover", href: "/missions/mars-rover" },
+      { name: "Mars", href: "/missions/mars" },
       { name: "Europa Clipper", href: "/missions/europa-clipper" },
       { name: "Plutonia", href: "/missions/plutonia" },
     ],
